@@ -1,4 +1,4 @@
-//использование инструкции for
+//РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РёРЅСЃС‚СЂСѓРєС†РёРё for
 #include <iostream>
 #include <cstdlib>
 using namespace std;
@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 	int count;
-	for (count = 1; count <= 100; count = count ++) //использование инкремента и цикла for
+	for (count = 1; count <= 100; count = count ++) //РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РёРЅРєСЂРµРјРµРЅС‚Р° Рё С†РёРєР»Р° for
 		cout << count << endl;
 	system("pause");
 	return 0;
