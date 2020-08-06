@@ -3,7 +3,7 @@
 #include <Windows.h>
 using namespace std;
 
-int mul (int x, int y); //прототип функции mul ()
+int mul (int x, int y); //РїСЂРѕС‚РѕС‚РёРї С„СѓРЅРєС†РёРё mul ()
 
 int main()
 {
@@ -11,13 +11,13 @@ int main()
 	setlocale(LC_ALL, "Russian");
 	setlocale(LC_ALL, "ru_RU.UTF-8");
 	setlocale(LC_ALL, "");
-	answer = mul(10, 11); //присваивание возвращаемого функцией значения через целочисленное значение answer
-	cout << "Ответ равен " << answer << endl;
+	answer = mul(10, 11); //РїСЂРёСЃРІР°РёРІР°РЅРёРµ РІРѕР·РІСЂР°С‰Р°РµРјРѕРіРѕ С„СѓРЅРєС†РёРµР№ Р·РЅР°С‡РµРЅРёСЏ С‡РµСЂРµР· С†РµР»РѕС‡РёСЃР»РµРЅРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ answer
+	cout << "ГЋГІГўГҐГІ Г°Г ГўГҐГ­ " << answer << endl;
 	system("pause");
 	return 0;
 }
 
-//Эта функция возвращает значение
+//Р­С‚Р° С„СѓРЅРєС†РёСЏ РІРѕР·РІСЂР°С‰Р°РµС‚ Р·РЅР°С‡РµРЅРёРµ
 int mul (int x, int y)
 {
 	return x * y; //
