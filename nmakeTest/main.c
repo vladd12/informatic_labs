@@ -9,12 +9,12 @@ int main(void)
 	float Numeral;
 	char Operation[4];
 	float Result;
-	printf("Число: ");
+	printf("Р§РёСЃР»Рѕ: ");
 	scanf("%f", &Numeral);
-	printf("Арифметическое действие (+,-,*,/,pow,sqrt,sin,cos,tan): ");
+	printf("РђСЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ РґРµР№СЃС‚РІРёРµ (+,-,*,/,pow,sqrt,sin,cos,tan): ");
 	scanf("%s", &Operation);
 	Result = Calculate(Numeral, Operation);
 	printf("%6.2f\n", Result);
-	// _getch(); // Для запуска из IDE
+	// _getch(); // Р”Р»СЏ Р·Р°РїСѓСЃРєР° РёР· IDE
 	return 0;
 }
