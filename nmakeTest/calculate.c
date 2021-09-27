@@ -6,32 +6,32 @@
 float Calculate(float Numeral, char Operation[4]) {
 	float SecondNumeral;
 	if (strncmp(Operation, "+", 1) == 0) {
-		printf("Второе слагаемое: ");
+		printf("Р’С‚РѕСЂРѕРµ СЃР»Р°РіР°РµРјРѕРµ: ");
 		scanf("%f", &SecondNumeral);
 		return(Numeral + SecondNumeral);
 	}
 	else if (strncmp(Operation, "-", 1) == 0) {
-		printf("Вычитаемое: ");
+		printf("Р’С‹С‡РёС‚Р°РµРјРѕРµ: ");
 		scanf("%f", &SecondNumeral);
 		return(Numeral - SecondNumeral);
 	}
 	else if (strncmp(Operation, "*", 1) == 0) {
-		printf("Множитель: ");
+		printf("РњРЅРѕР¶РёС‚РµР»СЊ: ");
 		scanf("%f", &SecondNumeral);
 		return(Numeral * SecondNumeral);
 	}
 	else if (strncmp(Operation, "/", 1) == 0) {
-		printf("Делитель: ");
+		printf("Р”РµР»РёС‚РµР»СЊ: ");
 		scanf("%f", &SecondNumeral);
 		if (SecondNumeral == 0) {
-			printf("Ошибка: деление на ноль! ");
+			printf("РћС€РёР±РєР°: РґРµР»РµРЅРёРµ РЅР° РЅРѕР»СЊ!");
 			return(HUGE_VAL);
 		}
 		else
 			return(Numeral / SecondNumeral);
 	}
 	else if (strncmp(Operation, "pow", 3) == 0) {
-		printf("Степень: ");
+		printf("РЎС‚РµРїРµРЅСЊ: ");
 		scanf("%f", &SecondNumeral);
 		return(pow(Numeral, SecondNumeral));
 	}
@@ -40,7 +40,7 @@ float Calculate(float Numeral, char Operation[4]) {
 	else if (strncmp(Operation, "cos", 3) == 0) return(cos(Numeral));
 	else if (strncmp(Operation, "tan", 3) == 0) return(tan(Numeral));
 	else {
-		printf("Неправильно введено действие ");
+		printf("РќРµРїСЂР°РІРёР»СЊРЅРѕ РІРІРµРґРµРЅРѕ РґРµР№СЃС‚РІРёРµ");
 		return(HUGE_VAL);
 	}
 }
